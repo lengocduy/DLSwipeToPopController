@@ -1,37 +1,66 @@
-## Welcome to GitHub Pages
+# DLSwipeToPopController
 
-You can use the [editor on GitHub](https://github.com/lengocduy/DLSwipeToPopController/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Reusable iOS's behavior to pop ViewController base on [SwipeRightToPopController](https://github.com/rishi420/SwipeRightToPopController):
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- Swipe from Right to Left to pop ViewController.
+    - Customize base on `velocity`
+- Drag from Right to Left to pop ViewController.
+    - Customize base on `percent` of distance with the screen width
 
-### Markdown
+## Requirements
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- Xcode 11+
+- Swift 5.0+
 
-```markdown
-Syntax highlighted code block
+## Installing
 
-# Header 1
-## Header 2
-### Header 3
+There are three ways to install `DLSwipeToPopController`
 
-- Bulleted
-- List
+### CocoaPods
 
-1. Numbered
-2. List
+Just add to your project's `Podfile`:
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+pod 'DLSwipeToPopController', '~> 1.0'
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Carthage
 
-### Jekyll Themes
+Add following to `Cartfile`:
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/lengocduy/DLSwipeToPopController/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```
+github "lengocduy/DLSwipeToPopController" ~> 1.0
+```
 
-### Support or Contact
+### Swift Package Manager
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Create a `Package.swift` file:
+
+```
+// swift-tools-version:5.0
+
+import PackageDescription
+
+let package = Package(
+        name: "TestLogging",
+
+        dependencies: [
+            .package(url: "https://github.com/lengocduy/DLSwipeToPopController.git", from: "1.0.0"),
+        ],
+
+        targets: [
+            .target(
+                    name: "TestSwipeToPopController",
+                    dependencies: ["DLSwipeToPopController"])
+        ]
+)
+
+```
+
+## Architecture
+
+![Architecture](https://github.com/lengocduy/DLSwipeToPopController/blob/v1.0.0/ArchDiagram.png?raw=true)
+
+## License
+
+DLSwipeToPopController is available under the MIT license. See the [LICENSE](LICENSE.md) file for more info.
