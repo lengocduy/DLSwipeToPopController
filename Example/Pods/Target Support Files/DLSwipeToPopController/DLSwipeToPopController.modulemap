@@ -1,0 +1,6 @@
+framework module DLSwipeToPopController {
+  umbrella header "DLSwipeToPopController-umbrella.h"
+
+  export *
+  module * { export * }
+}

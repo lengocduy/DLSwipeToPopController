@@ -1,0 +1,829 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		024AC23EAFB129403288A4F93176054F /* DLSwipeToPopController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF73BB1292F5EE477A33FF0898A1BEBB /* DLSwipeToPopController-dummy.m */; };
+		0AFB2A4A1B22E9441C073C124517964E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		0F9A64BAF3F2891B4DD3E24B92C871E4 /* DLSwipeToPopController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B412075F7CB70C68935EBCDF62BBE1 /* DLSwipeToPopController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1392AC3BA35C53FF521E194CE310388C /* SlideAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD306A82C592518542B017AC79E115 /* SlideAnimatedTransitioning.swift */; };
+		2FF683E44E6A3E5B0AF5644B4B04205C /* Pods-DLSwipeToPopController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A78AD2FE1A12573F8FE1537F7393C4A3 /* Pods-DLSwipeToPopController_Tests-dummy.m */; };
+		57848DFE328AC839CC0A049431CB6E6F /* Pods-DLSwipeToPopController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D901D0708DD88AD3DD478C4D5CD6BCF /* Pods-DLSwipeToPopController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77CD928E8DF445F4691618C94F64EB9A /* Pods-DLSwipeToPopController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D4B253550CE67F2AEF5D15015D0809F /* Pods-DLSwipeToPopController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D50297152D7153E1EDDDFF00D2F44C2 /* Pods-DLSwipeToPopController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6970A58BD90AB39604F24E1F871B3F /* Pods-DLSwipeToPopController_Example-dummy.m */; };
+		83DB2D37BC5ACE2E57D32003E3F336AE /*  SwipeToPopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5DE1EEB5EAB2F41FFAAFB531943485 /*  SwipeToPopTableViewController.swift */; };
+		966BC15F989ED9E2F17EDE05CE566CA2 /* SwipeToPopControllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8408AD7EB38EC6FFBE6E5A013165ABC /* SwipeToPopControllable.swift */; };
+		A658ABE93ABABC5B75FA6FCE1542C10B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		C6ACB89A7893EBC68954241D7C5CD8B5 /* SwipeToPopConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27A3D5ACEFA6841C21B92146F4840E9 /* SwipeToPopConfig.swift */; };
+		D56C39DCD59AEE8EDBE6E5F471F7AE0B /*  SwipeToPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF36F2562EAECF175D45699AA3B72FF1 /*  SwipeToPopViewController.swift */; };
+		EB79E1B2CF1279AD26B21A71FF4D1EC1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		F92105E34AFEEB62EEFF4A2A31D17337 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6BB8A46C770ADABA46695750B0198E2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEF3318FC9B51BF582B9FF4EA8492D18;
+			remoteInfo = "Pods-DLSwipeToPopController_Example";
+		};
+		8DE8E3FB74B9823961439697330A30B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABACB535C1EABB206222B9F09D4EC6D9;
+			remoteInfo = DLSwipeToPopController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06B412075F7CB70C68935EBCDF62BBE1 /* DLSwipeToPopController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLSwipeToPopController-umbrella.h"; sourceTree = "<group>"; };
+		0D586B0A50385FBAF8523D189221E30E /* Pods-DLSwipeToPopController_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DLSwipeToPopController_Example"; path = Pods_DLSwipeToPopController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15F09D4ED534D0513B3533CFE8C86087 /* DLSwipeToPopController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DLSwipeToPopController.release.xcconfig; sourceTree = "<group>"; };
+		2BA9D78BAA619A419F92DF7B5109991D /* Pods-DLSwipeToPopController_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DLSwipeToPopController_Example-Info.plist"; sourceTree = "<group>"; };
+		2DC69EEB6D90B844B3222A42632B5CE7 /* Pods-DLSwipeToPopController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DLSwipeToPopController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		37E4770EAC6AE296AE5A037F318F8172 /* LICENSE.md */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.md; sourceTree = "<group>"; };
+		3C22E486ACD7E56D1432BB237D0F6FF8 /* Pods-DLSwipeToPopController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DLSwipeToPopController_Tests.modulemap"; sourceTree = "<group>"; };
+		5D901D0708DD88AD3DD478C4D5CD6BCF /* Pods-DLSwipeToPopController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DLSwipeToPopController_Example-umbrella.h"; sourceTree = "<group>"; };
+		5F6970A58BD90AB39604F24E1F871B3F /* Pods-DLSwipeToPopController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DLSwipeToPopController_Example-dummy.m"; sourceTree = "<group>"; };
+		6D4B253550CE67F2AEF5D15015D0809F /* Pods-DLSwipeToPopController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DLSwipeToPopController_Tests-umbrella.h"; sourceTree = "<group>"; };
+		6EEAA4176381B1DFDE2431A2290BE560 /* Pods-DLSwipeToPopController_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DLSwipeToPopController_Tests"; path = Pods_DLSwipeToPopController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		737250158EC4DD1B0E846E0C269DA0A6 /* DLSwipeToPopController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DLSwipeToPopController.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8452BAB9E1B4C356E295B386827D8ECA /* Pods-DLSwipeToPopController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DLSwipeToPopController_Example-frameworks.sh"; sourceTree = "<group>"; };
+		85E2A4493CB86472CC5BDD03226B1572 /* DLSwipeToPopController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DLSwipeToPopController.modulemap; sourceTree = "<group>"; };
+		88C22525D15B297BA5317043337C29B8 /* Pods-DLSwipeToPopController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DLSwipeToPopController_Example.modulemap"; sourceTree = "<group>"; };
+		8D98237EBC6B862F610CE1465C79E295 /* Pods-DLSwipeToPopController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DLSwipeToPopController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		992A3B02A6ECA8F3A0A976E9F01A8704 /* Pods-DLSwipeToPopController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DLSwipeToPopController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A78AD2FE1A12573F8FE1537F7393C4A3 /* Pods-DLSwipeToPopController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DLSwipeToPopController_Tests-dummy.m"; sourceTree = "<group>"; };
+		AF36F2562EAECF175D45699AA3B72FF1 /*  SwipeToPopViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = " SwipeToPopViewController.swift"; sourceTree = "<group>"; };
+		B27A3D5ACEFA6841C21B92146F4840E9 /* SwipeToPopConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwipeToPopConfig.swift; sourceTree = "<group>"; };
+		B4C01C868B477648237CC6643C513239 /* DLSwipeToPopController */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DLSwipeToPopController; path = DLSwipeToPopController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C643CDF850141707258D2F0AAE1BE1B1 /* Pods-DLSwipeToPopController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DLSwipeToPopController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		C8408AD7EB38EC6FFBE6E5A013165ABC /* SwipeToPopControllable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwipeToPopControllable.swift; sourceTree = "<group>"; };
+		CF73BB1292F5EE477A33FF0898A1BEBB /* DLSwipeToPopController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DLSwipeToPopController-dummy.m"; sourceTree = "<group>"; };
+		D1076E9F8D3FE34EB16D544A04245D0E /* Pods-DLSwipeToPopController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DLSwipeToPopController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E1574B8FF2C0DBC62634538AC16405B0 /* DLSwipeToPopController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DLSwipeToPopController-Info.plist"; sourceTree = "<group>"; };
+		E5021A5EA5DE1DD011E96661883CB4B9 /* Pods-DLSwipeToPopController_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DLSwipeToPopController_Tests-Info.plist"; sourceTree = "<group>"; };
+		E67D2F0CCE1DB894019A3B2540B0D0AF /* Pods-DLSwipeToPopController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DLSwipeToPopController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		EA88AB82F3CEDE4CBD2A346D55B92966 /* Pods-DLSwipeToPopController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DLSwipeToPopController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EDA8FC29329F9E12CC13619FC549CEBF /* DLSwipeToPopController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLSwipeToPopController-prefix.pch"; sourceTree = "<group>"; };
+		EFBD306A82C592518542B017AC79E115 /* SlideAnimatedTransitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SlideAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		F315380509B162963F493759F9CE02B8 /* Pods-DLSwipeToPopController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DLSwipeToPopController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F55353689981C2F0D317A509721E90FA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		FB0CF9B3AC8B46E19CA8D4A6C036BD16 /* DLSwipeToPopController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DLSwipeToPopController.debug.xcconfig; sourceTree = "<group>"; };
+		FD5DE1EEB5EAB2F41FFAAFB531943485 /*  SwipeToPopTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = " SwipeToPopTableViewController.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EDFC1B63EA3B32075E952FD492F6280 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A658ABE93ABABC5B75FA6FCE1542C10B /* Foundation.framework in Frameworks */,
+				EB79E1B2CF1279AD26B21A71FF4D1EC1 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE919A5F4F2D4207A1EBCEEC2C151660 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F92105E34AFEEB62EEFF4A2A31D17337 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F500C05D7FC79B479B00FBB1CF23B55E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AFB2A4A1B22E9441C073C124517964E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1409D6EE9EC4944504C407D40F97CC18 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC79DCE75492C2657E51EB6A095CA822 /* Pods-DLSwipeToPopController_Example */,
+				523DA4D52794EFD33E2771A36FE76627 /* Pods-DLSwipeToPopController_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		15FD182F0E47EAE61E84ECFA70F0E10C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				C8408AD7EB38EC6FFBE6E5A013165ABC /* SwipeToPopControllable.swift */,
+			);
+			name = Protocol;
+			path = DLSwipeToPopController/Protocol;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3605EE6FEA48A5E9790B89739A6D3FB9 /* DLSwipeToPopController */ = {
+			isa = PBXGroup;
+			children = (
+				C5240ACD8EBF52B433D27424DE3E31F9 /* Impl */,
+				A4D59800517AFA47A09938EE4899BBB6 /* Model */,
+				CED52F08818C44247A706E31530EAAA3 /* Pod */,
+				15FD182F0E47EAE61E84ECFA70F0E10C /* Protocol */,
+				B0B9BA35C05A5E54920D81E2021F3A5F /* Support Files */,
+			);
+			name = DLSwipeToPopController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		523DA4D52794EFD33E2771A36FE76627 /* Pods-DLSwipeToPopController_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3C22E486ACD7E56D1432BB237D0F6FF8 /* Pods-DLSwipeToPopController_Tests.modulemap */,
+				D1076E9F8D3FE34EB16D544A04245D0E /* Pods-DLSwipeToPopController_Tests-acknowledgements.markdown */,
+				992A3B02A6ECA8F3A0A976E9F01A8704 /* Pods-DLSwipeToPopController_Tests-acknowledgements.plist */,
+				A78AD2FE1A12573F8FE1537F7393C4A3 /* Pods-DLSwipeToPopController_Tests-dummy.m */,
+				E5021A5EA5DE1DD011E96661883CB4B9 /* Pods-DLSwipeToPopController_Tests-Info.plist */,
+				6D4B253550CE67F2AEF5D15015D0809F /* Pods-DLSwipeToPopController_Tests-umbrella.h */,
+				E67D2F0CCE1DB894019A3B2540B0D0AF /* Pods-DLSwipeToPopController_Tests.debug.xcconfig */,
+				EA88AB82F3CEDE4CBD2A346D55B92966 /* Pods-DLSwipeToPopController_Tests.release.xcconfig */,
+			);
+			name = "Pods-DLSwipeToPopController_Tests";
+			path = "Target Support Files/Pods-DLSwipeToPopController_Tests";
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		97ECBC66B6F533E99BDD1CB8B2C41FEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4C01C868B477648237CC6643C513239 /* DLSwipeToPopController */,
+				0D586B0A50385FBAF8523D189221E30E /* Pods-DLSwipeToPopController_Example */,
+				6EEAA4176381B1DFDE2431A2290BE560 /* Pods-DLSwipeToPopController_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4D59800517AFA47A09938EE4899BBB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EFBD306A82C592518542B017AC79E115 /* SlideAnimatedTransitioning.swift */,
+				B27A3D5ACEFA6841C21B92146F4840E9 /* SwipeToPopConfig.swift */,
+			);
+			name = Model;
+			path = DLSwipeToPopController/Model;
+			sourceTree = "<group>";
+		};
+		B0B9BA35C05A5E54920D81E2021F3A5F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				85E2A4493CB86472CC5BDD03226B1572 /* DLSwipeToPopController.modulemap */,
+				CF73BB1292F5EE477A33FF0898A1BEBB /* DLSwipeToPopController-dummy.m */,
+				E1574B8FF2C0DBC62634538AC16405B0 /* DLSwipeToPopController-Info.plist */,
+				EDA8FC29329F9E12CC13619FC549CEBF /* DLSwipeToPopController-prefix.pch */,
+				06B412075F7CB70C68935EBCDF62BBE1 /* DLSwipeToPopController-umbrella.h */,
+				FB0CF9B3AC8B46E19CA8D4A6C036BD16 /* DLSwipeToPopController.debug.xcconfig */,
+				15F09D4ED534D0513B3533CFE8C86087 /* DLSwipeToPopController.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/DLSwipeToPopController";
+			sourceTree = "<group>";
+		};
+		BC79DCE75492C2657E51EB6A095CA822 /* Pods-DLSwipeToPopController_Example */ = {
+			isa = PBXGroup;
+			children = (
+				88C22525D15B297BA5317043337C29B8 /* Pods-DLSwipeToPopController_Example.modulemap */,
+				8D98237EBC6B862F610CE1465C79E295 /* Pods-DLSwipeToPopController_Example-acknowledgements.markdown */,
+				C643CDF850141707258D2F0AAE1BE1B1 /* Pods-DLSwipeToPopController_Example-acknowledgements.plist */,
+				5F6970A58BD90AB39604F24E1F871B3F /* Pods-DLSwipeToPopController_Example-dummy.m */,
+				8452BAB9E1B4C356E295B386827D8ECA /* Pods-DLSwipeToPopController_Example-frameworks.sh */,
+				2BA9D78BAA619A419F92DF7B5109991D /* Pods-DLSwipeToPopController_Example-Info.plist */,
+				5D901D0708DD88AD3DD478C4D5CD6BCF /* Pods-DLSwipeToPopController_Example-umbrella.h */,
+				2DC69EEB6D90B844B3222A42632B5CE7 /* Pods-DLSwipeToPopController_Example.debug.xcconfig */,
+				F315380509B162963F493759F9CE02B8 /* Pods-DLSwipeToPopController_Example.release.xcconfig */,
+			);
+			name = "Pods-DLSwipeToPopController_Example";
+			path = "Target Support Files/Pods-DLSwipeToPopController_Example";
+			sourceTree = "<group>";
+		};
+		C5240ACD8EBF52B433D27424DE3E31F9 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				FD5DE1EEB5EAB2F41FFAAFB531943485 /*  SwipeToPopTableViewController.swift */,
+				AF36F2562EAECF175D45699AA3B72FF1 /*  SwipeToPopViewController.swift */,
+			);
+			name = Impl;
+			path = DLSwipeToPopController/Impl;
+			sourceTree = "<group>";
+		};
+		CB4E123E44F58BF5C3EB2F90D21C492B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3605EE6FEA48A5E9790B89739A6D3FB9 /* DLSwipeToPopController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CED52F08818C44247A706E31530EAAA3 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				737250158EC4DD1B0E846E0C269DA0A6 /* DLSwipeToPopController.podspec */,
+				37E4770EAC6AE296AE5A037F318F8172 /* LICENSE.md */,
+				F55353689981C2F0D317A509721E90FA /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				CB4E123E44F58BF5C3EB2F90D21C492B /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				97ECBC66B6F533E99BDD1CB8B2C41FEC /* Products */,
+				1409D6EE9EC4944504C407D40F97CC18 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AF343138EEB00899254ECC56D79EC794 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77CD928E8DF445F4691618C94F64EB9A /* Pods-DLSwipeToPopController_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD3978064B91F931B4DE511CB255C1B5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57848DFE328AC839CC0A049431CB6E6F /* Pods-DLSwipeToPopController_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C74D8A97E11E0E9D71F494243A72E0DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F9A64BAF3F2891B4DD3E24B92C871E4 /* DLSwipeToPopController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		301FFB35347E2FE52A5D7152FF586F5E /* Pods-DLSwipeToPopController_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D31267D687ECF3E0E53E1CEC42BE3286 /* Build configuration list for PBXNativeTarget "Pods-DLSwipeToPopController_Tests" */;
+			buildPhases = (
+				AF343138EEB00899254ECC56D79EC794 /* Headers */,
+				80E2CD9EB46A8EF4B79CA2D0999B38D9 /* Sources */,
+				F500C05D7FC79B479B00FBB1CF23B55E /* Frameworks */,
+				B5E14D525BA765E21BF3C8DFDD689BD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44F079EDB844350ADFE72DA39BC830FD /* PBXTargetDependency */,
+			);
+			name = "Pods-DLSwipeToPopController_Tests";
+			productName = Pods_DLSwipeToPopController_Tests;
+			productReference = 6EEAA4176381B1DFDE2431A2290BE560 /* Pods-DLSwipeToPopController_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		ABACB535C1EABB206222B9F09D4EC6D9 /* DLSwipeToPopController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C6097200F6ED0D31ADB7C4EB3393828 /* Build configuration list for PBXNativeTarget "DLSwipeToPopController" */;
+			buildPhases = (
+				C74D8A97E11E0E9D71F494243A72E0DC /* Headers */,
+				519B0DC9013F41B22C1E347D6DB9806E /* Sources */,
+				9EDFC1B63EA3B32075E952FD492F6280 /* Frameworks */,
+				F93B45AC5AF1280645F1192FCFEC4B1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DLSwipeToPopController;
+			productName = DLSwipeToPopController;
+			productReference = B4C01C868B477648237CC6643C513239 /* DLSwipeToPopController */;
+			productType = "com.apple.product-type.framework";
+		};
+		AEF3318FC9B51BF582B9FF4EA8492D18 /* Pods-DLSwipeToPopController_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCC1037611FB2EE114AF9B2F61C457BD /* Build configuration list for PBXNativeTarget "Pods-DLSwipeToPopController_Example" */;
+			buildPhases = (
+				BD3978064B91F931B4DE511CB255C1B5 /* Headers */,
+				205695B10C9A87B2D84BA7BB98E55248 /* Sources */,
+				AE919A5F4F2D4207A1EBCEEC2C151660 /* Frameworks */,
+				61974467F411A58149EE79D5C0B2440D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD3EC521821693EE6BF89E7343598DBA /* PBXTargetDependency */,
+			);
+			name = "Pods-DLSwipeToPopController_Example";
+			productName = Pods_DLSwipeToPopController_Example;
+			productReference = 0D586B0A50385FBAF8523D189221E30E /* Pods-DLSwipeToPopController_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 97ECBC66B6F533E99BDD1CB8B2C41FEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABACB535C1EABB206222B9F09D4EC6D9 /* DLSwipeToPopController */,
+				AEF3318FC9B51BF582B9FF4EA8492D18 /* Pods-DLSwipeToPopController_Example */,
+				301FFB35347E2FE52A5D7152FF586F5E /* Pods-DLSwipeToPopController_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61974467F411A58149EE79D5C0B2440D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5E14D525BA765E21BF3C8DFDD689BD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F93B45AC5AF1280645F1192FCFEC4B1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		205695B10C9A87B2D84BA7BB98E55248 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D50297152D7153E1EDDDFF00D2F44C2 /* Pods-DLSwipeToPopController_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		519B0DC9013F41B22C1E347D6DB9806E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83DB2D37BC5ACE2E57D32003E3F336AE /*  SwipeToPopTableViewController.swift in Sources */,
+				D56C39DCD59AEE8EDBE6E5F471F7AE0B /*  SwipeToPopViewController.swift in Sources */,
+				024AC23EAFB129403288A4F93176054F /* DLSwipeToPopController-dummy.m in Sources */,
+				1392AC3BA35C53FF521E194CE310388C /* SlideAnimatedTransitioning.swift in Sources */,
+				C6ACB89A7893EBC68954241D7C5CD8B5 /* SwipeToPopConfig.swift in Sources */,
+				966BC15F989ED9E2F17EDE05CE566CA2 /* SwipeToPopControllable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80E2CD9EB46A8EF4B79CA2D0999B38D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FF683E44E6A3E5B0AF5644B4B04205C /* Pods-DLSwipeToPopController_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44F079EDB844350ADFE72DA39BC830FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DLSwipeToPopController_Example";
+			target = AEF3318FC9B51BF582B9FF4EA8492D18 /* Pods-DLSwipeToPopController_Example */;
+			targetProxy = 6BB8A46C770ADABA46695750B0198E2D /* PBXContainerItemProxy */;
+		};
+		DD3EC521821693EE6BF89E7343598DBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DLSwipeToPopController;
+			target = ABACB535C1EABB206222B9F09D4EC6D9 /* DLSwipeToPopController */;
+			targetProxy = 8DE8E3FB74B9823961439697330A30B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5C5B263E6BEE9E88A0AE3B28F97637B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15F09D4ED534D0513B3533CFE8C86087 /* DLSwipeToPopController.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DLSwipeToPopController/DLSwipeToPopController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DLSwipeToPopController/DLSwipeToPopController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DLSwipeToPopController/DLSwipeToPopController.modulemap";
+				PRODUCT_MODULE_NAME = DLSwipeToPopController;
+				PRODUCT_NAME = DLSwipeToPopController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5F67D20AE7964F3238114E2F469B031C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB0CF9B3AC8B46E19CA8D4A6C036BD16 /* DLSwipeToPopController.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DLSwipeToPopController/DLSwipeToPopController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DLSwipeToPopController/DLSwipeToPopController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DLSwipeToPopController/DLSwipeToPopController.modulemap";
+				PRODUCT_MODULE_NAME = DLSwipeToPopController;
+				PRODUCT_NAME = DLSwipeToPopController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8215D73B2C8A8F952D65F1A996F868D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E67D2F0CCE1DB894019A3B2540B0D0AF /* Pods-DLSwipeToPopController_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DLSwipeToPopController_Tests/Pods-DLSwipeToPopController_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DLSwipeToPopController_Tests/Pods-DLSwipeToPopController_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8A5D549534F5C8C197AEA5D715684FED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA88AB82F3CEDE4CBD2A346D55B92966 /* Pods-DLSwipeToPopController_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DLSwipeToPopController_Tests/Pods-DLSwipeToPopController_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DLSwipeToPopController_Tests/Pods-DLSwipeToPopController_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A601CDBB56C8CEBCA244BCCDFF8F0A72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DC69EEB6D90B844B3222A42632B5CE7 /* Pods-DLSwipeToPopController_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DLSwipeToPopController_Example/Pods-DLSwipeToPopController_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DLSwipeToPopController_Example/Pods-DLSwipeToPopController_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E8E2A99F60E33695640B0123E6D49598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F315380509B162963F493759F9CE02B8 /* Pods-DLSwipeToPopController_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DLSwipeToPopController_Example/Pods-DLSwipeToPopController_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DLSwipeToPopController_Example/Pods-DLSwipeToPopController_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
+				903A0004D3E6651EFD5D2E16214D101B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C6097200F6ED0D31ADB7C4EB3393828 /* Build configuration list for PBXNativeTarget "DLSwipeToPopController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F67D20AE7964F3238114E2F469B031C /* Debug */,
+				5C5B263E6BEE9E88A0AE3B28F97637B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCC1037611FB2EE114AF9B2F61C457BD /* Build configuration list for PBXNativeTarget "Pods-DLSwipeToPopController_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A601CDBB56C8CEBCA244BCCDFF8F0A72 /* Debug */,
+				E8E2A99F60E33695640B0123E6D49598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D31267D687ECF3E0E53E1CEC42BE3286 /* Build configuration list for PBXNativeTarget "Pods-DLSwipeToPopController_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8215D73B2C8A8F952D65F1A996F868D9 /* Debug */,
+				8A5D549534F5C8C197AEA5D715684FED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

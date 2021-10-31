@@ -1,0 +1,6 @@
+framework module Pods_DLSwipeToPopController_Tests {
+  umbrella header "Pods-DLSwipeToPopController_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
