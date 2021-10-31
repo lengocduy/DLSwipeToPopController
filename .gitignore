@@ -3,7 +3,6 @@
 
 # Xcode
 build/
-.build/
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -19,6 +18,11 @@ profile
 DerivedData
 *.hmap
 *.ipa
+
+# Generated folders | files
+.build/
+archives/
+DLSwipeToPopController.xcframework
 
 # Bundler
 .bundle
