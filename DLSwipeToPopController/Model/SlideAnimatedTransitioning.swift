@@ -8,13 +8,14 @@
 
 import UIKit
 
-class SlideAnimatedTransitioning: NSObject {
+public final class SlideAnimatedTransitioning: NSObject {
 
 }
 
 extension SlideAnimatedTransitioning: UIViewControllerAnimatedTransitioning {
 
-    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+	// swiftlint:disable line_length
+    public func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         
         let containerView = transitionContext.containerView
         let fromView = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from)!.view
@@ -26,9 +27,9 @@ extension SlideAnimatedTransitioning: UIViewControllerAnimatedTransitioning {
         offsetLeft?.origin.x = width
         
         var offscreenRight = toView?.frame
-        offscreenRight?.origin.x = -width / 3.33;
+        offscreenRight?.origin.x = -width / 3.33
         
-        toView?.frame = offscreenRight!;
+        toView?.frame = offscreenRight!
         
         fromView?.layer.shadowRadius = 5.0
         fromView?.layer.shadowOpacity = 1.0
@@ -36,7 +37,7 @@ extension SlideAnimatedTransitioning: UIViewControllerAnimatedTransitioning {
         
         containerView.insertSubview(toView!, belowSubview: fromView!)
         
-        UIView.animate(withDuration: transitionDuration(using: transitionContext), delay:0, options:.curveLinear, animations:{
+        UIView.animate(withDuration: transitionDuration(using: transitionContext), delay: 0, options: .curveLinear, animations: {
             
             toView?.frame = (fromView?.frame)!
             fromView?.frame = offsetLeft!
@@ -44,7 +45,7 @@ extension SlideAnimatedTransitioning: UIViewControllerAnimatedTransitioning {
             toView?.layer.opacity = 1.0
             fromView?.layer.shadowOpacity = 0.1
             
-            }, completion: { finished in
+            }, completion: { _ in
                 toView?.layer.opacity = 1.0
                 toView?.layer.shadowOpacity = 0
                 fromView?.layer.opacity = 1.0
@@ -56,7 +57,7 @@ extension SlideAnimatedTransitioning: UIViewControllerAnimatedTransitioning {
         })
     }
     
-    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
+    public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         
         return 0.3
     }

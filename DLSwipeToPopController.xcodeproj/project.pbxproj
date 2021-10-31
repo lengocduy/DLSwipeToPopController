@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		180E6D57272E4E5400047A53 /* SwipeToPopController.h in Headers */ = {isa = PBXBuildFile; fileRef = 180E6D55272E4E5400047A53 /* SwipeToPopController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		180E6D61272E4EC000047A53 /* SlideAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E6D5F272E4EC000047A53 /* SlideAnimatedTransitioning.swift */; };
-		180E6D62272E4EC000047A53 /* SwipeRightToPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E6D60272E4EC000047A53 /* SwipeRightToPopViewController.swift */; };
+		180E6D6A272E9F9D00047A53 /* SwipeToPopControllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E6D69272E9F9D00047A53 /* SwipeToPopControllable.swift */; };
+		180E6D6E272EA0D900047A53 /* SwipeToPopConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E6D6D272EA0D900047A53 /* SwipeToPopConfig.swift */; };
+		180E6D71272EA3EA00047A53 /*  SwipeToPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E6D70272EA3EA00047A53 /*  SwipeToPopViewController.swift */; };
+		180E6D74272EA48C00047A53 /*  SwipeToPopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E6D73272EA48C00047A53 /*  SwipeToPopTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,7 +20,10 @@
 		180E6D55272E4E5400047A53 /* SwipeToPopController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwipeToPopController.h; sourceTree = "<group>"; };
 		180E6D56272E4E5400047A53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		180E6D5F272E4EC000047A53 /* SlideAnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideAnimatedTransitioning.swift; sourceTree = "<group>"; };
-		180E6D60272E4EC000047A53 /* SwipeRightToPopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeRightToPopViewController.swift; sourceTree = "<group>"; };
+		180E6D69272E9F9D00047A53 /* SwipeToPopControllable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeToPopControllable.swift; sourceTree = "<group>"; };
+		180E6D6D272EA0D900047A53 /* SwipeToPopConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeToPopConfig.swift; sourceTree = "<group>"; };
+		180E6D70272EA3EA00047A53 /*  SwipeToPopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " SwipeToPopViewController.swift"; sourceTree = "<group>"; };
+		180E6D73272EA48C00047A53 /*  SwipeToPopTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " SwipeToPopTableViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,7 +40,7 @@
 		180E6D48272E4E5400047A53 = {
 			isa = PBXGroup;
 			children = (
-				180E6D54272E4E5400047A53 /* SwipeToPopController */,
+				180E6D54272E4E5400047A53 /* DLSwipeToPopController */,
 				180E6D53272E4E5400047A53 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,23 +53,42 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		180E6D54272E4E5400047A53 /* SwipeToPopController */ = {
+		180E6D54272E4E5400047A53 /* DLSwipeToPopController */ = {
 			isa = PBXGroup;
 			children = (
+				180E6D6C272EA04600047A53 /* Model */,
+				180E6D68272E9F7A00047A53 /* Protocol */,
 				180E6D5E272E4EC000047A53 /* Impl */,
 				180E6D55272E4E5400047A53 /* SwipeToPopController.h */,
 				180E6D56272E4E5400047A53 /* Info.plist */,
 			);
-			path = SwipeToPopController;
+			path = DLSwipeToPopController;
 			sourceTree = "<group>";
 		};
 		180E6D5E272E4EC000047A53 /* Impl */ = {
 			isa = PBXGroup;
 			children = (
-				180E6D5F272E4EC000047A53 /* SlideAnimatedTransitioning.swift */,
-				180E6D60272E4EC000047A53 /* SwipeRightToPopViewController.swift */,
+				180E6D70272EA3EA00047A53 /*  SwipeToPopViewController.swift */,
+				180E6D73272EA48C00047A53 /*  SwipeToPopTableViewController.swift */,
 			);
 			path = Impl;
+			sourceTree = "<group>";
+		};
+		180E6D68272E9F7A00047A53 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				180E6D69272E9F9D00047A53 /* SwipeToPopControllable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		180E6D6C272EA04600047A53 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				180E6D5F272E4EC000047A53 /* SlideAnimatedTransitioning.swift */,
+				180E6D6D272EA0D900047A53 /* SwipeToPopConfig.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,8 +191,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180E6D71272EA3EA00047A53 /*  SwipeToPopViewController.swift in Sources */,
 				180E6D61272E4EC000047A53 /* SlideAnimatedTransitioning.swift in Sources */,
-				180E6D62272E4EC000047A53 /* SwipeRightToPopViewController.swift in Sources */,
+				180E6D74272EA48C00047A53 /*  SwipeToPopTableViewController.swift in Sources */,
+				180E6D6E272EA0D900047A53 /* SwipeToPopConfig.swift in Sources */,
+				180E6D6A272E9F9D00047A53 /* SwipeToPopControllable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +333,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwipeToPopController/Info.plist;
+				INFOPLIST_FILE = DLSwipeToPopController/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -331,7 +359,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwipeToPopController/Info.plist;
+				INFOPLIST_FILE = DLSwipeToPopController/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
