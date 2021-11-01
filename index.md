@@ -16,7 +16,7 @@ Reusable iOS's behavior to pop ViewController base on [SwipeRightToPopController
 
 There are three ways to install `DLSwipeToPopController`
 
-### CocoaPods
+### 1. CocoaPods
 
 Just add to your project's `Podfile`:
 
@@ -24,7 +24,7 @@ Just add to your project's `Podfile`:
 pod 'DLSwipeToPopController', '~> 1.0'
 ```
 
-### Carthage
+### 2. Carthage
 
 Add following to `Cartfile`:
 
@@ -32,7 +32,7 @@ Add following to `Cartfile`:
 github "lengocduy/DLSwipeToPopController" ~> 1.0
 ```
 
-### Swift Package Manager
+### 3. Swift Package Manager
 
 Create a `Package.swift` file:
 
@@ -42,7 +42,7 @@ Create a `Package.swift` file:
 import PackageDescription
 
 let package = Package(
-        name: "TestLogging",
+        name: "TestSwipeToPopController",
 
         dependencies: [
             .package(url: "https://github.com/lengocduy/DLSwipeToPopController.git", from: "1.0.0"),
