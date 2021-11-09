@@ -13,6 +13,8 @@ class SwipeTableViewController: SwipeToPopTableViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        
+        tableView.backgroundColor = .white
 	}
 
 	// MARK: - Table view data source
@@ -29,6 +31,6 @@ class SwipeTableViewController: SwipeToPopTableViewController {
 	
 	/// Default percent 0.25 and horizontal velocity 100 for pan's state is ended to continue the action
 	override var swipeToPopConfig: SwipeToPopConfig {
-		return SwipeToPopConfig(percent: 0.1, velocity: 500)
+        return SwipeToPopConfig(percent: 0.1, velocity: 500, maximumOfVerticalDistance: 20)
 	}
 }

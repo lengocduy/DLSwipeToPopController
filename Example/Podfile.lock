@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DLSwipeToPopController: 99888bf6b5cdfbf5b1ea2d3a824225ccc3e8b42e
+  DLSwipeToPopController: b032c67916d75839fa0e49d1ab351f55d24c8c16
 
 PODFILE CHECKSUM: 5c76193d145644460e7ede81abd70ef8096b27f5
 

@@ -10,6 +10,8 @@ import UIKit
 // MARK: - SwipeToPopTableViewController
 
 open class SwipeToPopTableViewController: UITableViewController, SwipeToPopControllable {
+    public var isDragging  = false
+    
 	public var percentDrivenInteractiveTransition: UIPercentDrivenInteractiveTransition?
 	// swiftlint:disable implicitly_unwrapped_optional
 	public var panGestureRecognizer: UIPanGestureRecognizer!
@@ -33,7 +35,7 @@ open class SwipeToPopTableViewController: UITableViewController, SwipeToPopContr
 	
 	/// Default percent 0.5 and horizontal velocity 1000
 	open var swipeToPopConfig: SwipeToPopConfig {
-		SwipeToPopConfig(percent: 0.5, velocity: 1000)
+        SwipeToPopConfig(percent: 0.5, velocity: 1000, maximumOfVerticalDistance: 30)
 	}
 }
 

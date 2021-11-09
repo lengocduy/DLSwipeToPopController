@@ -20,6 +20,6 @@ class SwipeViewController: SwipeToPopViewController {
 
 	/// Default percent 0.25 and horizontal velocity 100 for pan's state is ended to continue the action
 	override var swipeToPopConfig: SwipeToPopConfig {
-		return SwipeToPopConfig(percent: 0.25, velocity: 100)
+        return SwipeToPopConfig(percent: 0.25, velocity: 100, maximumOfVerticalDistance: 30.0)
 	}
 }

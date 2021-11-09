@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol SwipeToPopControllable: AnyObject, UINavigationControllerDelegate, UIGestureRecognizerDelegate {
+public protocol SwipeToPopControllable: UINavigationControllerDelegate, UIGestureRecognizerDelegate {
 	var percentDrivenInteractiveTransition: UIPercentDrivenInteractiveTransition? { get set }
 	
 	// swiftlint:disable implicitly_unwrapped_optional
@@ -15,6 +15,9 @@ public protocol SwipeToPopControllable: AnyObject, UINavigationControllerDelegat
 	
 	/// Customize for handle even once user end his action panGesture.state == .ended : drag or swipe
 	var swipeToPopConfig: SwipeToPopConfig { get }
+    
+    /// Check whether user is dragging or not. If User is dragging just let user continue with the action
+    var isDragging: Bool { get set }
 
 	/// Callback when ViewController was popped
 	func didPopViewController()
@@ -85,19 +88,29 @@ public extension SwipeToPopControllable where Self: UIViewController {
 		switch panGesture.state {
 
 		case .began:
+            isDragging = false
 			navigationController?.delegate = self
 			_ = navigationController?.popViewController(animated: true)
 
 		case .changed:
+            let translation = panGesture.translation(in: view)
+            let shouldRecognize = abs(translation.x) > abs(translation.y) &&  abs(translation.y) < swipeToPopConfig.maximumOfVerticalDistance || isDragging
+            
+            if !shouldRecognize {
+                percentDrivenInteractiveTransition?.cancel()
+                break
+            }
+            
+            isDragging = true
 			if let percentDrivenInteractiveTransition = percentDrivenInteractiveTransition {
 				percentDrivenInteractiveTransition.update(percent)
 			}
 
 		case .ended:
-			let velocity = panGesture.velocity(in: view).x
+			let velocity = panGesture.velocity(in: view)
 
 			// Continue if drag more than customized percent of screen width or velocity is higher than customized velocity
-			if percent > swipeToPopConfig.percent || velocity > swipeToPopConfig.velocity {
+            if percent > swipeToPopConfig.percent || velocity.x > swipeToPopConfig.velocity {
 				percentDrivenInteractiveTransition?.finish()
 				didPopViewController()
 			} else {
