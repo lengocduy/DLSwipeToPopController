@@ -1,5 +1,11 @@
 # Changelog
 
+## [v1.1.0](https://github.com/lengocduy/DLSwipeToPopController/tree/v1.1.0) (2021-11-09)
+
+- Support configuration for maximum of vertical distance (coordinate y) `maximumOfVerticalDistance`
+  - Only recognize the gesture when user drag of swipe in the range of this property's value
+  - In the case vertical distance larger than the configured value. It will skip recognizing and delegate for other components in the chain
+
 ## [v1.0.0](https://github.com/lengocduy/DLSwipeToPopController/tree/v1.0.0) (2021-10-31)
 
 - Swipe from Right to Left to pop ViewController

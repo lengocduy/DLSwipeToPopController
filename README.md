@@ -21,7 +21,7 @@ There are three ways to install `DLSwipeToPopController`
 Just add to your project's `Podfile`:
 
 ```
-pod 'DLSwipeToPopController', '~> 1.0'
+pod 'DLSwipeToPopController', '~> 1.1'
 ```
 
 ### 2. Carthage
@@ -29,7 +29,7 @@ pod 'DLSwipeToPopController', '~> 1.0'
 Add following to `Cartfile`:
 
 ```
-github "lengocduy/DLSwipeToPopController" ~> 1.0
+github "lengocduy/DLSwipeToPopController" ~> 1.1
 ```
 
 ### 3. Swift Package Manager
@@ -45,7 +45,7 @@ let package = Package(
         name: "TestSwipeToPopController",
 
         dependencies: [
-            .package(url: "https://github.com/lengocduy/DLSwipeToPopController.git", from: "1.0.0"),
+            .package(url: "https://github.com/lengocduy/DLSwipeToPopController.git", from: "1.1.0"),
         ],
 
         targets: [
@@ -59,7 +59,7 @@ let package = Package(
 
 ## Architecture
 
-![Architecture](https://github.com/lengocduy/DLSwipeToPopController/blob/v1.0.0/ArchDiagram.png?raw=true)
+![Architecture](https://github.com/lengocduy/DLSwipeToPopController/blob/main/ArchDiagram.png?raw=true)
 
 ## License
 
