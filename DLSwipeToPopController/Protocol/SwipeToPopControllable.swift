@@ -73,7 +73,7 @@ public extension SwipeToPopControllable where Self: UIViewController {
 		otherGestureRecognizer: UIGestureRecognizer
 	) -> Bool {
 		if let panGestureRecognizer = gestureRecognizer as? UIPanGestureRecognizer {
-			// Priority for Swipe Right to Pop ViewController
+			// Priority for Swipe Right to Pop ViewController. Skip other gestures
 			let velocity = panGestureRecognizer.velocity(in: view)
 			return velocity.x < 0
 		}
@@ -108,9 +108,11 @@ public extension SwipeToPopControllable where Self: UIViewController {
 
 		case .ended:
 			let velocity = panGesture.velocity(in: view)
+            let translation = panGesture.translation(in: view)
 
-			// Continue if drag more than customized percent of screen width or velocity is higher than customized velocity
-            if percent > swipeToPopConfig.percent || velocity.x > swipeToPopConfig.velocity {
+            // Continue if drag more than customized percent of screen width or velocity is higher than customized velocity and horizontal direction
+            let shouldFinishBaseOnVelocity = abs(translation.x) > abs(translation.y) && velocity.x > swipeToPopConfig.velocity
+            if percent > swipeToPopConfig.percent || shouldFinishBaseOnVelocity {
 				percentDrivenInteractiveTransition?.finish()
 				didPopViewController()
 			} else {
