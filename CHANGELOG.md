@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.1.1](https://github.com/lengocduy/DLSwipeToPopController/tree/v1.1.1) (2021-11-13)
+
+- Detect horizontal direction once the gesture end to process as finish transition only
+
 ## [v1.1.0](https://github.com/lengocduy/DLSwipeToPopController/tree/v1.1.0) (2021-11-09)
 
 - Support configuration for maximum of vertical distance (coordinate y) `maximumOfVerticalDistance`

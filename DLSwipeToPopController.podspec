@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'DLSwipeToPopController'
-  s.version          = '1.1.0'
+  s.version          = '1.1.1'
   s.summary          = 'Framework supports Swipe To Pop ViewController'
   s.description      = <<-DESC
   Reusable iOS's behavior to pop ViewController base on [SwipeRightToPopController](https://github.com/rishi420/SwipeRightToPopController)
