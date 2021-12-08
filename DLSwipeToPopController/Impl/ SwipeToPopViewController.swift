@@ -24,7 +24,9 @@ open class SwipeToPopViewController: UIViewController, SwipeToPopControllable {
     override open func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
     
-        didPopViewController()
+        if view.superview == nil {
+            didPopViewController()
+        }
     }
 
 	@objc
