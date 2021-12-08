@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.1.2](https://github.com/lengocduy/DLSwipeToPopController/tree/v1.1.2) (2021-12-08)
+
+- Detect horizontal direction once the gesture end to process as finish transition only
+
 ## [v1.1.1](https://github.com/lengocduy/DLSwipeToPopController/tree/v1.1.1) (2021-11-13)
 
 - Detect horizontal direction once the gesture end to process as finish transition only
