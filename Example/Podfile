@@ -7,7 +7,15 @@ target 'DLSwipeToPopController_Example' do
 
   target 'DLSwipeToPopController_Tests' do
     inherit! :search_paths
-
-    
   end
 end
+
+post_install do |installer_representation|
+    installer_representation.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'true'
+            config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+        end
+    end
+end
+

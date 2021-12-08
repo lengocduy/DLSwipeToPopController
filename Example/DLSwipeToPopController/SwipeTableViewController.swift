@@ -33,4 +33,8 @@ class SwipeTableViewController: SwipeToPopTableViewController {
 	override var swipeToPopConfig: SwipeToPopConfig {
         return SwipeToPopConfig(percent: 0.1, velocity: 500, maximumOfVerticalDistance: 20)
 	}
+    
+    override public func didPopViewController() {
+        print("do something fire event | callback to delegate to parent")
+    }
 }

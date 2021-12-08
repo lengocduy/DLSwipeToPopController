@@ -1,5 +1,5 @@
 PODS:
-  - DLSwipeToPopController (1.0.0)
+  - DLSwipeToPopController (1.1.2)
 
 DEPENDENCIES:
   - DLSwipeToPopController (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DLSwipeToPopController: b032c67916d75839fa0e49d1ab351f55d24c8c16
+  DLSwipeToPopController: 8a44d623ca6c0355ea348726bf0e2ca15709cd9d
 
-PODFILE CHECKSUM: 5c76193d145644460e7ede81abd70ef8096b27f5
+PODFILE CHECKSUM: 073f0e886e5ad41b941cbd7be569efbd9b9acd01
 
 COCOAPODS: 1.11.2

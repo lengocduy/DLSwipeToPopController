@@ -22,4 +22,8 @@ class SwipeViewController: SwipeToPopViewController {
 	override var swipeToPopConfig: SwipeToPopConfig {
         return SwipeToPopConfig(percent: 0.25, velocity: 100, maximumOfVerticalDistance: 30.0)
 	}
+    
+    override public func didPopViewController() {
+        print("do something fire event | callback to delegate to parent")
+    }
 }
