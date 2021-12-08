@@ -20,6 +20,12 @@ open class SwipeToPopViewController: UIViewController, SwipeToPopControllable {
 
 		addGesture(action: #selector(SwipeToPopViewController.handlePanGesture(_:)))
 	}
+    
+    override open func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+    
+        didPopViewController()
+    }
 
 	@objc
 	func handlePanGesture(_ panGesture: UIPanGestureRecognizer) {

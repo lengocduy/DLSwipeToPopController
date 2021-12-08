@@ -21,6 +21,12 @@ open class SwipeToPopTableViewController: UITableViewController, SwipeToPopContr
 
 		addGesture(action: #selector(SwipeToPopTableViewController.handlePanGesture(_:)))
 	}
+    
+    override open func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        didPopViewController()
+    }
 
 	@objc
 	func handlePanGesture(_ panGesture: UIPanGestureRecognizer) {

@@ -9,7 +9,7 @@ import UIKit
 
 public protocol SwipeToPopControllable: UINavigationControllerDelegate, UIGestureRecognizerDelegate {
 	var percentDrivenInteractiveTransition: UIPercentDrivenInteractiveTransition? { get set }
-	
+    
 	// swiftlint:disable implicitly_unwrapped_optional
 	var panGestureRecognizer: UIPanGestureRecognizer! { get set }
 	
@@ -114,7 +114,6 @@ public extension SwipeToPopControllable where Self: UIViewController {
             let shouldFinishBaseOnVelocity = abs(translation.x) > abs(translation.y) && velocity.x > swipeToPopConfig.velocity
             if percent > swipeToPopConfig.percent || shouldFinishBaseOnVelocity {
 				percentDrivenInteractiveTransition?.finish()
-				didPopViewController()
 			} else {
 				percentDrivenInteractiveTransition?.cancel()
 			}
