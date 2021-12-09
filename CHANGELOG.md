@@ -1,8 +1,12 @@
 # Changelog
 
+## [v1.1.3](https://github.com/lengocduy/DLSwipeToPopController/tree/v1.1.3) (2021-12-09)
+
+- Skip invoking method `didPopViewController` when view was embed inside another `ContainerView`
+
 ## [v1.1.2](https://github.com/lengocduy/DLSwipeToPopController/tree/v1.1.2) (2021-12-08)
 
-- Detect horizontal direction once the gesture end to process as finish transition only
+- Invoke method `didPopViewController` when `viewDidDisappear` to allow the client consume event follow the life-cycle
 
 ## [v1.1.1](https://github.com/lengocduy/DLSwipeToPopController/tree/v1.1.1) (2021-11-13)
 
