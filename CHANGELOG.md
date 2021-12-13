@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.1.4](https://github.com/lengocduy/DLSwipeToPopController/tree/v1.1.4) (2021-12-13)
+
+- Filter invoking method `didPopViewController` when view was popped out Navigation Stack only
+
 ## [v1.1.3](https://github.com/lengocduy/DLSwipeToPopController/tree/v1.1.3) (2021-12-09)
 
 - Skip invoking method `didPopViewController` when view was embed inside another `ContainerView`

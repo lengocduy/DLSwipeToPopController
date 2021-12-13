@@ -45,7 +45,7 @@ let package = Package(
         name: "TestSwipeToPopController",
 
         dependencies: [
-            .package(url: "https://github.com/lengocduy/DLSwipeToPopController.git", from: "1.1.3"),
+            .package(url: "https://github.com/lengocduy/DLSwipeToPopController.git", from: "1.1.4"),
         ],
 
         targets: [
