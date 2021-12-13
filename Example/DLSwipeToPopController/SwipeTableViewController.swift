@@ -9,7 +9,7 @@
 import UIKit
 import DLSwipeToPopController
 
-class SwipeTableViewController: SwipeToPopTableViewController {
+final class SwipeTableViewController: SwipeToPopTableViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CxC-P9-aA3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CxC-P9-aA3">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,7 +27,6 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="DLSwipeToPopController_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
@@ -48,7 +47,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Pb4-VQ-UzD" kind="show" id="pHi-BT-bsF"/>
+                                    <segue destination="iMK-Vm-KYX" kind="show" id="L79-06-Ezq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYr-bR-xqq">
@@ -77,27 +76,65 @@
                     </view>
                     <navigationItem key="navigationItem" id="fCq-uG-OoU"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="96.799999999999997" y="118.29085457271366"/>
         </scene>
         <!--Swipe View Controller-->
-        <scene sceneID="0ny-tg-wz9">
+        <scene sceneID="YhJ-8A-nA5">
             <objects>
-                <viewController id="Pb4-VQ-UzD" customClass="SwipeViewController" customModule="DLSwipeToPopController_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="iMK-Vm-KYX" customClass="SwipeViewController" customModule="DLSwipeToPopController_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="fG4-w1-kbu"/>
-                        <viewControllerLayoutGuide type="bottom" id="Pz9-kg-XOR"/>
+                        <viewControllerLayoutGuide type="top" id="gqN-Ty-LLN"/>
+                        <viewControllerLayoutGuide type="bottom" id="TmI-nI-YmF"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="1lm-tR-pFm">
+                    <view key="view" contentMode="scaleToFill" id="Uvp-rO-JMe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0B-p8-nCp">
+                                <rect key="frame" x="85.5" y="318.5" width="204" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NPQ-Xy-JMM"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="pfT-s0-zQp"/>
+                                </constraints>
+                                <state key="normal" title="Push ViewController">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="HR7-z5-gC2" kind="show" id="pvK-iL-eRO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKl-bX-ixf">
+                                <rect key="frame" x="85.5" y="389" width="204" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="9B0-I6-UDe"/>
+                                    <constraint firstAttribute="height" constant="30" id="hZ6-aa-zpo"/>
+                                </constraints>
+                                <state key="normal" title="Present Modal ViewController">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7CR-dQ-UoJ" kind="presentation" modalPresentationStyle="currentContext" modalTransitionStyle="coverVertical" id="MEd-nC-GXc"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cKl-bX-ixf" firstAttribute="width" secondItem="J0B-p8-nCp" secondAttribute="width" id="7HA-VQ-c7Q"/>
+                            <constraint firstItem="cKl-bX-ixf" firstAttribute="centerX" secondItem="J0B-p8-nCp" secondAttribute="centerX" id="Vxr-g4-Hcq"/>
+                            <constraint firstItem="J0B-p8-nCp" firstAttribute="centerY" secondItem="Uvp-rO-JMe" secondAttribute="centerY" id="cwc-AF-P2P"/>
+                            <constraint firstItem="J0B-p8-nCp" firstAttribute="centerX" secondItem="Uvp-rO-JMe" secondAttribute="centerX" id="diq-Mn-zqt"/>
+                            <constraint firstItem="cKl-bX-ixf" firstAttribute="top" secondItem="J0B-p8-nCp" secondAttribute="bottom" constant="40.5" id="lCd-lB-XpA"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="WZu-FO-yzr"/>
+                    <navigationItem key="navigationItem" id="AaV-mm-R2U"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7xF-k4-5ga" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I35-7u-ybt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="969" y="-265"/>
+            <point key="canvasLocation" x="969" y="-226"/>
         </scene>
         <!--Swipe Table View Controller-->
         <scene sceneID="daU-A8-LZA">
@@ -109,7 +146,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="QNx-74-8u4">
-                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                <rect key="frame" x="0.0" y="44.5" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QNx-74-8u4" id="bhM-40-Gsx">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -127,6 +164,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="th6-Sx-YOT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="969" y="472"/>
+        </scene>
+        <!--Swipe View Controller-->
+        <scene sceneID="Gel-ZX-42N">
+            <objects>
+                <viewController id="HR7-z5-gC2" customClass="SwipeViewController" customModule="DLSwipeToPopController_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yTD-Va-ff1"/>
+                        <viewControllerLayoutGuide type="bottom" id="y6F-KM-GdB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dal-zU-5q3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Tyj-il-Y8B"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zae-vC-Tfr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2151" y="-593"/>
+        </scene>
+        <!--Modal View Controller-->
+        <scene sceneID="kso-ng-HcI">
+            <objects>
+                <viewController id="7CR-dQ-UoJ" customClass="ModalViewController" customModule="DLSwipeToPopController_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D2f-Gm-bXq"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Qh-Kg-8ho"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H8p-CN-bPV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmv-Jm-OLb">
+                                <rect key="frame" x="108.5" y="318.5" width="158" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="1Ba-rO-PTg"/>
+                                    <constraint firstAttribute="height" constant="30" id="9tb-Wm-157"/>
+                                </constraints>
+                                <state key="normal" title="Dismiss ViewController">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapToDismiss:" destination="7CR-dQ-UoJ" eventType="touchUpInside" id="aRp-zr-qvJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gmv-Jm-OLb" firstAttribute="centerY" secondItem="H8p-CN-bPV" secondAttribute="centerY" id="a7j-gs-q0O"/>
+                            <constraint firstItem="gmv-Jm-OLb" firstAttribute="centerX" secondItem="H8p-CN-bPV" secondAttribute="centerX" id="dTq-6s-taE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YH5-XQ-ziP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pcs-YR-bBe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2150" y="146"/>
         </scene>
     </scenes>
     <resources>

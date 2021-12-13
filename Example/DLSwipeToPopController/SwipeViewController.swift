@@ -9,7 +9,7 @@
 import UIKit
 import DLSwipeToPopController
 
-class SwipeViewController: SwipeToPopViewController {
+final class SwipeViewController: SwipeToPopViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

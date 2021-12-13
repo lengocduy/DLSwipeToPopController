@@ -17,6 +17,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		70D36D0A7D7AF663922ECB5B /* Pods_DLSwipeToPopController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667DB5856BC51FB3ED72C4C0 /* Pods_DLSwipeToPopController_Tests.framework */; };
+		CD42380427676290005FA6C6 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD42380327676290005FA6C6 /* ModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		61038C70DDD818F2D184BA24 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		667DB5856BC51FB3ED72C4C0 /* Pods_DLSwipeToPopController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DLSwipeToPopController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		923D88DCFCC67E4C1A2AFB7D /* Pods-DLSwipeToPopController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLSwipeToPopController_Example.debug.xcconfig"; path = "Target Support Files/Pods-DLSwipeToPopController_Example/Pods-DLSwipeToPopController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		CD42380327676290005FA6C6 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		DF2D34FF5C16CDB4C2B837BA /* Pods-DLSwipeToPopController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLSwipeToPopController_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DLSwipeToPopController_Tests/Pods-DLSwipeToPopController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +118,7 @@
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 				180E6D8E272EB20C00047A53 /* SwipeViewController.swift */,
 				180E6D9B272EB64F00047A53 /* SwipeTableViewController.swift */,
+				CD42380327676290005FA6C6 /* ModalViewController.swift */,
 			);
 			name = "Example for DLSwipeToPopController";
 			path = DLSwipeToPopController;
@@ -338,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				CD42380427676290005FA6C6 /* ModalViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				180E6D8F272EB20C00047A53 /* SwipeViewController.swift in Sources */,
 				180E6D9C272EB64F00047A53 /* SwipeTableViewController.swift in Sources */,
