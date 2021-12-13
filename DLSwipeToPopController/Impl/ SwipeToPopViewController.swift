@@ -24,7 +24,8 @@ open class SwipeToPopViewController: UIViewController, SwipeToPopControllable {
     override open func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
     
-        if view.superview == nil {
+        // Make sure the view was pop instead of push and not embedded inside a container view
+        if view.superview == nil && navigationController == nil {
             didPopViewController()
         }
     }
